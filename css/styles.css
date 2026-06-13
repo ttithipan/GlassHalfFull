@@ -38,17 +38,17 @@ body {
 .page-layout {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    max-width: 680px;
+    gap: 12px;
+    max-width: 520px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 12px;
     min-height: 100vh;
     justify-content: center;
 }
 
 .main-row {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     align-items: stretch;
 }
 
@@ -67,7 +67,7 @@ body {
     background: var(--surface);
     border-radius: var(--radius);
     box-shadow: var(--shadow-lg);
-    padding: 24px 18px;
+    padding: 16px 12px;
     text-align: center;
     height: 100%;
     display: flex;
@@ -83,7 +83,7 @@ body {
 .drop-zone {
     border: 2px dashed var(--border);
     border-radius: var(--radius);
-    padding: 30px 12px;
+    padding: 20px 10px;
     cursor: pointer;
     transition:
         border-color 0.2s,
@@ -97,19 +97,19 @@ body {
 }
 
 .drop-icon {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     pointer-events: none;
 }
 
 .drop-text {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .drop-hint {
-    font-size: 10px;
+    font-size: 11px;
     color: var(--text-dim);
 }
 
@@ -119,9 +119,9 @@ body {
 
 /* ---- State 2: Loading ---- */
 .spinner {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto 18px;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 12px;
     border: 2px solid var(--border);
     border-top-color: var(--accent);
     border-radius: 50%;
@@ -135,10 +135,10 @@ body {
 }
 
 .splash-text {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--text);
-    min-height: 18px;
+    min-height: 16px;
     transition: opacity 0.2s;
 }
 
@@ -147,7 +147,7 @@ body {
     position: relative;
     width: 50%;
     aspect-ratio: 1;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 #result-image {
@@ -170,10 +170,10 @@ body {
 }
 
 .verdict {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     color: var(--text);
 }
 
@@ -183,18 +183,18 @@ body {
 
 .verdict-line {
     display: block;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
     font-style: italic;
     color: var(--text-dim);
-    margin-top: 6px;
-    line-height: 1.5;
+    margin-top: 4px;
+    line-height: 1.4;
 }
 
 .btn-reset {
     display: inline-block;
-    padding: 8px 18px;
-    font-size: 10px;
+    padding: 6px 14px;
+    font-size: 11px;
     font-weight: 500;
     color: var(--accent);
     background: transparent;
@@ -213,149 +213,149 @@ body {
 
 /* ---- Error ---- */
 .error-text {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--text);
-    margin-bottom: 18px;
-    line-height: 1.5;
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 /* ---- Responsive ---- */
 @media (max-width: 800px) {
     body {
         align-items: flex-start;
-        padding-top: 8px;
+        padding-top: 6px;
     }
     .page-layout {
         max-width: 100%;
         overflow-x: hidden;
         min-height: auto;
-        gap: 12px;
-        padding: 0 8px;
+        gap: 8px;
+        padding: 0 6px;
     }
     .top-bar-island {
         max-width: 100%;
-        padding: 12px 16px;
+        padding: 10px 12px;
     }
     .main-row {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
     }
     .app-col {
         flex: 0 0 auto;
         width: 100%;
     }
     .panel {
-        padding: 16px 12px;
+        padding: 12px 10px;
         height: auto;
         min-height: auto;
     }
     .drop-zone {
-        padding: 20px 12px;
+        padding: 14px 10px;
     }
     .drop-text {
-        font-size: 15px;
+        font-size: 16px;
     }
     .drop-hint {
-        font-size: 12px;
+        font-size: 13px;
     }
     .drop-icon svg {
-        width: 42px;
-        height: 42px;
+        width: 36px;
+        height: 36px;
     }
     .verdict {
-        font-size: 20px;
+        font-size: 18px;
     }
     .verdict-line {
-        font-size: 12px;
+        font-size: 13px;
     }
     .splash-text {
-        font-size: 15px;
+        font-size: 16px;
     }
     .spinner {
-        width: 42px;
-        height: 42px;
+        width: 36px;
+        height: 36px;
     }
     .btn-reset {
-        font-size: 13px;
-        padding: 9px 21px;
+        font-size: 14px;
+        padding: 8px 18px;
     }
     .samples-island {
         width: 100%;
-        padding: 12px;
+        padding: 10px;
     }
     .samples-grid {
-        gap: 4px;
+        gap: 3px;
     }
     .samples-grid img {
-        border-radius: 3px;
+        border-radius: 2px;
     }
     .samples-heading {
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 8px;
     }
     .contact-link {
-        font-size: 14px;
+        font-size: 15px;
     }
     .contact-links {
-        gap: 12px;
+        gap: 10px;
     }
 }
 
 /* Laptop: scale up */
 @media (min-width: 801px) {
     body {
-        font-size: 18px;
+        font-size: 14px;
     }
     .page-layout {
-        max-width: 1020px;
+        max-width: 780px;
     }
     .app-col {
         flex: 0 0 55%;
     }
     .drop-text {
-        font-size: 18px;
+        font-size: 20px;
     }
     .drop-hint {
-        font-size: 15px;
+        font-size: 16px;
     }
     .splash-text {
-        font-size: 18px;
+        font-size: 20px;
     }
     .verdict {
-        font-size: 27px;
+        font-size: 28px;
     }
     .verdict-line {
-        font-size: 15px;
+        font-size: 16px;
     }
     .samples-heading {
-        font-size: 33px;
+        font-size: 36px;
     }
     .contact-link {
-        font-size: 33px;
+        font-size: 36px;
     }
     .btn-reset {
-        font-size: 15px;
+        font-size: 16px;
         padding: 10px 24px;
     }
     .error-text {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 360px) {
     .panel {
-        padding: 18px 12px;
+        padding: 14px 10px;
     }
     .drop-zone {
-        padding: 18px 10px;
+        padding: 14px 8px;
     }
     .verdict {
-        font-size: 16px;
+        font-size: 15px;
     }
     .verdict-line {
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
@@ -364,22 +364,22 @@ body {
     background: var(--surface);
     border-radius: var(--radius);
     box-shadow: var(--shadow-lg);
-    padding: 15px 18px;
+    padding: 12px 14px;
     text-align: center;
     width: 100%;
 }
 
 .app-title {
-    font-size: clamp(14px, 3vw, 27px);
+    font-size: clamp(13px, 2.5vw, 22px);
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     line-height: 1.2;
 }
 
 .byline {
     display: block;
-    font-size: clamp(10px, 2.25vw, 21px);
+    font-size: clamp(10px, 2vw, 16px);
     font-weight: 400;
     color: var(--text-dim);
 }
@@ -387,11 +387,11 @@ body {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 14px;
 }
 
 .contact-link {
-    font-size: clamp(14px, 3vw, 22px);
+    font-size: clamp(13px, 2.5vw, 18px);
     font-weight: 500;
     color: var(--accent);
     text-decoration: none;
@@ -407,23 +407,23 @@ body {
     background: var(--surface);
     border-radius: var(--radius);
     box-shadow: var(--shadow-lg);
-    padding: 18px;
+    padding: 14px;
     flex: 1;
     min-width: 0;
 }
 
 .samples-heading {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-dim);
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .samples-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+    gap: 4px;
 }
 
 .samples-grid img {
