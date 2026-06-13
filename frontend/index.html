@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Existential Glass Analyzer</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+            <!-- Top bar: contacts (full width) -->
+            <section class="top-bar-island">
+                <h1 class="app-title">
+                    The Existential Glass Analyzer<br />
+                    <span class="byline">by Tithipan</span>
+                </h1>
+                <nav class="contact-links">
+                    <a href="https://github.com/ttithipan" class="contact-link"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/ttithipan/"
+                        class="contact-link"
+                        >LinkedIn</a
+                    >
+                    <a href="mailto:tithipan.the@gmail.com" class="contact-link"
+                        >Email</a
+                    >
+                </nav>
+            </section>
+
+            <!-- Main row: app + samples side-by-side -->
+            <div class="main-row">
+                <!-- Left: app UI -->
+                <div class="app-col">
+                    <main class="app" id="app">
+                        <!-- State 1: Upload -->
+                        <section class="panel" id="panel-upload">
+                            <div class="drop-zone" id="drop-zone">
+                                <div class="drop-icon">
+                                    <svg
+                                        width="48"
+                                        height="48"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                    >
+                                        <rect
+                                            x="4"
+                                            y="10"
+                                            width="40"
+                                            height="32"
+                                            rx="4"
+                                            stroke="#9CA3AF"
+                                            stroke-width="2"
+                                        />
+                                        <circle
+                                            cx="16"
+                                            cy="20"
+                                            r="4"
+                                            stroke="#9CA3AF"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M8 38l10-14 8 10 6-8 12 16"
+                                            stroke="#9CA3AF"
+                                            stroke-width="2"
+                                            stroke-linejoin="round"
+                                        />
+                                        <circle
+                                            cx="34"
+                                            cy="16"
+                                            r="3"
+                                            fill="#9CA3AF"
+                                        />
+                                    </svg>
+                                </div>
+                                <p class="drop-text">
+                                    Drop an image of a glass here
+                                </p>
+                                <p class="drop-hint">
+                                    or click to browse — PNG, JPEG, WebP
+                                </p>
+                                <input
+                                    type="file"
+                                    id="file-input"
+                                    accept="image/png,image/jpeg,image/webp"
+                                    hidden
+                                />
+                            </div>
+                        </section>
+
+                        <!-- State 2: Loading -->
+                        <section class="panel hidden" id="panel-loading">
+                            <div class="spinner"></div>
+                            <p class="splash-text" id="splash-text">
+                                Figuring out the existential questions...
+                            </p>
+                        </section>
+
+                        <!-- State 3: Result -->
+                        <section class="panel hidden" id="panel-result">
+                            <div class="result-image-wrap">
+                                <img id="result-image" alt="Your glass" />
+                                <canvas id="bbox-canvas"></canvas>
+                            </div>
+                            <p class="verdict" id="verdict"></p>
+                            <button class="btn-reset" id="btn-reset">
+                                Try another glass
+                            </button>
+                        </section>
+
+                        <!-- Error fallback -->
+                        <section class="panel hidden" id="panel-error">
+                            <p class="error-text" id="error-text"></p>
+                            <button class="btn-reset" id="btn-error-reset">
+                                Try again
+                            </button>
+                        </section>
+                    </main>
+                </div>
+
+                <!-- Right: sample gallery -->
+                <aside class="samples-island">
+                    <p class="samples-heading">Need a glass of water?</p>
+                    <div class="samples-grid">
+                        <img src="samples/glass_09000.png" alt="Sample glass" />
+                        <img src="samples/glass_09001.png" alt="Sample glass" />
+                        <img src="samples/glass_09002.png" alt="Sample glass" />
+                        <img src="samples/glass_09003.png" alt="Sample glass" />
+                        <img src="samples/glass_09004.png" alt="Sample glass" />
+                        <img src="samples/glass_09005.png" alt="Sample glass" />
+                        <img src="samples/glass_09006.png" alt="Sample glass" />
+                        <img src="samples/glass_09007.png" alt="Sample glass" />
+                        <img src="samples/glass_09008.png" alt="Sample glass" />
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

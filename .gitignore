@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+
+# Training artifacts
+checkpoints/
+runs/
+onnx_models/
+*.pt
+
+# Dataset
+dataset/
+
+# Dev scripts
+scripts/
+
+# Blender portable
+tools/
+
+# Assets (linked, not uploaded)
+assets/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Windows reserved device name
+nul
+
+# Agent / project planning
+agent-scratch-md/
+documentation/
+prompts-md/
