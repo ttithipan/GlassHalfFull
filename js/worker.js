@@ -2,7 +2,7 @@
  * Web Worker — ONNX Runtime Web Inference Engine
  */
 
-const MODEL_URL = "./model.onnx";
+const MODEL_URL = "../model.onnx";
 const INPUT_SIZE = 256;
 const GRID_S16 = 16;
 const GRID_S32 = 8;
