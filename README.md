@@ -9,6 +9,9 @@ Drop in a photo of a glass. A tiny neural network runs entirely in your browser
 (via WebGPU) and renders a philosophical verdict. No servers, no API keys, no
 privacy concerns — just a 6 MB model, a canvas overlay, and an opinion.
 
+An experiment in **edge-device computer vision** and **agentic AI** —
+built entirely by a coding agent inside the Zed editor. No human wrote a single line.
+
 ---
 
 ## Try It
