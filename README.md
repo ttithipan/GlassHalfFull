@@ -13,7 +13,7 @@ privacy concerns — just a 6 MB model, a canvas overlay, and an opinion.
 
 ## Try It
 
-Visit `https://ttithipan.github.io/glass-half-full/`
+[Here](https://ttithipan.github.io/GlassHalfFull/)
 
 ---
 
