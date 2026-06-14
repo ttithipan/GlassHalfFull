@@ -1,26 +1,30 @@
-# Python
+# Python artifacts
 __pycache__/
 *.py[cod]
 *.egg-info/
 venv/
 
-# Training artifacts
+# Training artifacts (large binaries)
 checkpoints/
 runs/
 onnx_models/
 *.pt
 
-# Dataset
+# Dataset (large binary files)
 dataset/
 
-# Dev scripts
-scripts/
+# Blender scene scripts
 
-# Blender portable
+# Blender portable (large binary, extract separately)
 tools/
 
 # Assets (linked, not uploaded)
 assets/
+
+# Planning / agent scratch
+prompts-md/
+agent-scratch-md/
+documentation/
 
 # OS junk
 .DS_Store
@@ -32,8 +36,3 @@ Thumbs.db
 
 # Windows reserved device name
 nul
-
-# Agent / project planning
-agent-scratch-md/
-documentation/
-prompts-md/
