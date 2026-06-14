@@ -117,6 +117,11 @@ glass-half-full/
 
 ## Reproducing the Dataset
 
+> **Skip the render**: the pre-generated dataset (8,000 images + YOLO labels)
+> is available on [Hugging Face](https://huggingface.co/datasets/Aspirin4/synthetic-glass-with-liquid-filled).
+> Download `images.zip` and `labels.zip`, extract into `dataset/images/` and
+> `dataset/labels/`, then jump to [Training Your Own Model](#training-your-own-model).
+
 1. **Download Blender** (Windows, ~400 MB) from
    [blender.org/download](https://www.blender.org/download/) and extract into
    `tools/blender-portable/` so that `tools/blender-portable/blender.exe` exists.
